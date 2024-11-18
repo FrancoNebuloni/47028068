@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1">
+        <title>Administración del librojuego</title>
+        <link rel="stylesheet" href="./CSS/styles.css">
+        <script src="./Js/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="bienvenido/a">¡Bienvenido, usuario sin registrar!</h1>
+            <h1 id="tituloPrincipal">El Camino De Vuelta a Casa</h1>
+            <h2 id="tituloSecundario">Un Librojuego para entretenerse un rato</h2>
+            <nav>
+                <ul class="navBar">
+                    <li>
+                        <a href="./index.html">Volver Al Menú Principal</a>
+                    </li>
+                    <li>
+                        <a href="#A">Crear un Nuevo Capítulo</a>
+                    </li>
+                    <li>
+                        <a href="#B">Borrar un Capítulo</a>
+                    </li>
+                    <li>
+                        <a href="#M">Modificar un Capítulo</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3 id="A">Crear un Nuevo Capítulo</h3>
+            <form>
+                <div class="elementoDeFormulario">
+                    <label for="nombreDelCapitulo">Escriba el nombre del Capítulo</label>
+                    <br>
+                    <input id="nombreDelCapitulo" type="text" name="Nombre del Capítulo">
+                </div>
+                <div class="elementoDeFormulario">
+                    <label for="cantidadDeEscenarios">Seleccione la cantidad de escenarios</label>
+                    <br>
+                    <input id="cantidadDeEscenarios" type="text" name="Cantidad de escenarios">
+                </div>
+                <div class="elementoDeFormulario">
+                    <label for="cantidadDeFinales">Seleccione la cantidad de finales</label>
+                    <br>
+                    <input id="cantidadDeFinales" type="text" name="Cantidad de finales">
+                </div>
+                <input type="submit" value="Crear Capítulo">
+            </form>
+            <br>
+            <h3 id="B">Borrar un Capítulo</h3>
+            <form>
+                <label for="borrarCapitulo">Elija el capítulo a borrar</label>
+                <br>
+                <input id="borrarCapitulo" type="text" name="Capitulo a borrar">
+                <br>
+                <input type="submit" value="Borrar Capitulo">
+            </form>
+            <br>
+            <h3 id="M">Modificar un capítulo</h3>
+            <form>
+                <div class="elementoDeFormulario">
+                    <label for="nombreDelCapitulo">Escriba el nombre del Capítulo a Modificar</label>
+                    <br>
+                    <input id="nombreDelCapitulo" type="text" name="Nombre del Capítulo">
+                </div>
+                <div class="elementoDeFormulario">
+                    <label for="cantidadDeEscenariosDelCapitulo">Seleccione la cantidad de escenarios del capítulo</label>
+                    <br>
+                    <input id="cantidadDeEscenariosDelCapitulo" type="text" name="cantidad de escenarios por modificar">
+                </div>
+                <div class="elementoDeFormulario">
+                    <label for="cantidadDeFinalesDelCapítulo">Seleccione la cantidad de finales del capítulo</label>
+                    <br>
+                    <input id="cantidadDeFinalesDelCapítulo" type="text" name="cantidad de finales por modificar">
+                </div>
+                <input type="submit" value="Modificar capítulo">
+            </form>
+        </main>
+        <footer>
+            <h6>Juego desarrollado por Nebuloni Franco, se pide el respeto de todos los derechos de autor reservados al mismo.</h6>
+        </footer>
+    </body>
+</html>
